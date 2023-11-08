@@ -21,10 +21,6 @@ test("sum should be correct", () => {
   expect(result2).toBe(102);
 })
 test("mult should be correct", () => {
-  // data
-  const a = 1;
-  const b = 2;
-  const c = 3;
 
   // action
   const result1 = mult(a,b);
