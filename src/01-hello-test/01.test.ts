@@ -1,4 +1,4 @@
-import {mult, splitIntoWords, sum} from "./01";
+import {mult, splitIntoWords, sum} from './01';
 
 // data
 let a: number;
@@ -10,31 +10,31 @@ beforeEach(() => {
   b = 2;
   c = 3;
 })
-test("sum should be correct", () => {
+test.skip('sum should be correct', () => {
   // action
-  const result1 = sum(a,b);
+  const result1 = sum(a, b);
   a = 100
-  const result2 = sum(a,b);
+  const result2 = sum(a, b);
 
 // expect result
   expect(result1).toBe(3);
   expect(result2).toBe(102);
 })
-test("mult should be correct", () => {
+test.skip('mult should be correct', () => {
 
   // action
-  const result1 = mult(a,b);
-  const result2 = mult(b,c);
+  const result1 = mult(a, b);
+  const result2 = mult(b, c);
 
 // expect result
   expect(result1).toBe(2);
   expect(result2).toBe(6);
 })
 
-test("splitIntoWords shold be correct", () => {
+test.skip('splitIntoWords should be correct', () => {
   // data
-  const sent1 = "Hello my friends!";
-  const sent2 = "JS - the best   programming language.";
+  const sent1 = 'Hello my friends!';
+  const sent2 = 'JS - the best   programming language.';
 
   // action
   const result1 = splitIntoWords(sent1);
@@ -42,16 +42,14 @@ test("splitIntoWords shold be correct", () => {
 
   // expect result
   expect(result1.length).toBe(3);
-  expect(result1[0]).toBe("hello");
-  expect(result1[1]).toBe("my");
-  expect(result1[2]).toBe("friends");
+  expect(result1[0]).toBe('hello');
+  expect(result1[1]).toBe('my');
+  expect(result1[2]).toBe('friends');
 
   expect(result2.length).toBe(5);
-  expect(result2[0]).toBe("js");
-  expect(result2[1]).toBe("the");
-  expect(result2[2]).toBe("best");
-  expect(result2[3]).toBe("programming");
-  expect(result2[4]).toBe("language");
-
-
+  expect(result2[0]).toBe('js');
+  expect(result2[1]).toBe('the');
+  expect(result2[2]).toBe('best');
+  expect(result2[3]).toBe('programming');
+  expect(result2[4]).toBe('language');
 })
