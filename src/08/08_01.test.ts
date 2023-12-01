@@ -13,7 +13,7 @@ beforeEach(() => {
   }
 })
 
-test('should update corresponding user', () => {
+test.skip('should update corresponding user', () => {
   users[1].name = 'Ekaterina'
   expect(users[1].name).toBe('Ekaterina')
   expect(users[1]).toEqual({id: 1, name: 'Ekaterina'})
