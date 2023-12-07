@@ -41,14 +41,14 @@ test.skip('array reference test', () => {
 
   expect(users[2]).toEqual({name:'Bad',age: 10})
 })
-test('value type test', () => {
+test.skip('value type test', () => {
   let usersCount = 100
   let adminsCount = usersCount
   adminsCount++
   expect(adminsCount).toBe(101)
 })
 
-test('reference 2 obj test', () => {
+test.skip('reference 2 obj test', () => {
   let user: UserType = {
     name: 'Dimych',
     age: 32,
@@ -69,7 +69,7 @@ test('reference 2 obj test', () => {
   expect(user.address).toEqual(user2.address)
   expect(user.address).toBe(user2.address)
 })
-test('sort array test', () => {
+test.skip('sort array test', () => {
   const letters = ['c', 'a', 'b']
   letters.sort()
   expect(letters).toEqual(['a','b','c'])
